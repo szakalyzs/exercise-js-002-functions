@@ -1,6 +1,6 @@
 'use strict';
 
-//1. feladat
+// 1. feladat
 
 const handleClick = () => {
     let elements = document.querySelectorAll('.button');
@@ -9,7 +9,18 @@ const handleClick = () => {
     }
 }
 
-//2. feladat
+// 2. feladat
 
 const summation = (a = 0, b = 0) => a + b;
 const substraction = (a = 0, b = 0) => a - b;
+
+// 3. feladat
+
+const anyBody = {
+    firstName: 'Rick',
+    lastName: 'Eastley',
+    age: 65
+};
+
+const personDataLog = ({ firstName = 'John', lastName = 'Doe', age = 33 }) => console.log('My name is ' + firstName + ', ' + lastName + ". I'm " + age + ' years old.' );
+
